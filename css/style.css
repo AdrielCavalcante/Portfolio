@@ -631,11 +631,12 @@ header, .navbar{
 
     /* call to action */
     #call-area p, #call-area #call-btn{
-        font-size: 9pt;
+        font-size: 10px;
         letter-spacing: 0;
         margin: 0;
         width: 50%;
     }
+
     /* contact */
     .contact-box{
         border: none;
