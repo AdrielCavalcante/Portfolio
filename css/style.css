@@ -47,7 +47,13 @@ header, .navbar{
 
 #navbar-links a{
     color: #FFF;
+    cursor: pointer;
 }
+
+#navbar-links a:hover{
+    color: #3EC1D5;
+}
+
 
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 1rem .8rem;
@@ -379,4 +385,261 @@ header, .navbar{
     background-color: #444;
     border-color: #333;
     color: #FFF;
+}
+
+/* Footer */
+
+#contact-area{
+    text-align: center;
+}
+
+.contact-box{
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #3EC1D5;
+}
+
+.contact-box i{
+    color: #444;
+    border: solid 1px #444;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-box p{
+    font-size: 16px;
+}
+
+.contact-title{
+    font-weight: bold;
+    color: #3EC1D5;
+}
+
+#msg-box p{
+    font-size: 22pt;
+}
+
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea{
+    margin-bottom: 15px;
+    border-radius: 0;
+}
+
+#contact-form .main-btn{
+    width: 120px;
+    height: 50px;
+}
+
+#contact-form .main-btn:hover{
+    color: #3EC1D5;
+}
+
+/* copy */
+
+#copy-area .container{
+    padding: 10px 0;
+    text-align: center;
+}
+
+#copy-area .container p{
+    margin-bottom: 0;
+}
+
+#copy-area .container a{
+    font-weight: bold;
+    color: #444;
+}
+
+#copy-area .container a:hover{
+    text-decoration: none;
+    color: #3EC1D5;
+}
+
+/* Responsive Tablet*/
+@media(max-width: 768px){
+    /* Geral */
+    .container{
+        padding: 20px 0;
+    }
+    /* Slider */
+    #mainSlider .carousel-inner, #mainSlider .carousel-item {
+        height: auto;
+    }
+
+    #mainSlider .carousel-caption h2{
+        font-size:  20pt;
+    }
+
+    #mainSlider .carousel-caption p{
+        font-size: 18pt;
+        margin-bottom: 40px;
+    }
+    .carousel-caption{
+        left: 10%;
+        right: 10%;
+    }
+    /* about */
+    #about-area img{
+        margin-top: 40px;
+    }
+
+    .about-title{
+        font-size: 15pt;
+    }
+
+    #about-p{
+        font-size: 12pt;
+    }
+
+    #about-list li{
+        font-size: 11pt;
+    }
+
+    /* data */
+    .circle-box div{
+        padding: 0 10px;
+    }
+
+    #data-area{
+        font-size: 16px;
+    }
+
+    /* Sobre mim */
+    #textocard p{
+        font-size: 16pt;
+    }
+
+    /* apply */
+    #apply-area .apply-box{
+        padding: 50px 25px;
+    }
+    /* news */
+    #news-area p{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    
+    #email-input{
+        width: 70%;
+    }
+
+    #call-area {
+        margin-top: 30px;
+    }
+
+    #call-area .container{
+        padding: 30px;
+    }
+
+    #call-area p, #call-area #call-btn{
+        font-size: 12pt;
+    }
+
+    /* footer */
+    #msg-box p{
+        font-size: 18pt;
+    }
+
+    /* copy */
+    #copy-area .container p{
+        font-size: 12pt;
+    }
+}
+
+@media(max-width: 426px){
+    /* Slider */
+    #mainSlider{
+        margin-top: 90px;
+    }
+
+    #mainSlider .carousel-caption{
+        top: 5%;
+    }
+
+    #mainSlider .carousel-caption h2{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    #mainSlider .carousel-caption p{
+        display: none;
+    }
+
+    .carousel-caption .main-btn{
+        font-size: 14px;
+    }
+
+    /* about */
+    .main-title{
+        font-size: 26pt;
+    }
+
+    #about-area img{
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    /* data */
+    .circle-box{
+        width: 50%;
+    }
+
+    /* sobre mim */
+    #team-area .col-md-4{
+        width: 80%;
+        left: 10%;
+        right: 10%;
+    }
+    .card-body h5{
+        font-size: 19pt;
+    }
+
+    /* apply */
+    #apply-area{
+        height: auto;
+    }
+
+    #company-img{
+        display: none;
+    }
+
+    /* filter */
+    #portfolio-area .filter-btn{
+        margin-bottom: 20px;
+    }
+
+    .project-box{
+        width: 50%;
+    }
+
+    /* news */
+    #news-area .main-title{
+        font-size: 21pt;
+    }
+
+    #news-area p{
+        font-size: 12pt;
+    }
+
+    #email-input{
+        width: 80%;
+    }
+
+    /* call to action */
+    #call-area p, #call-area #call-btn{
+        font-size: 10pt;
+        letter-spacing: 0;
+        margin: 0;
+        width: 50%;
+    }
+    /* contact */
+    .contact-box{
+        border: none;
+        margin-bottom: 0;
+    }
+
 }
