@@ -630,11 +630,22 @@ header, .navbar{
     }
 
     /* call to action */
-    #call-area p, #call-area #call-btn{
+    #call-area .container{
+        padding: 10px;
+    }
+
+    #call-area p{
         font-size: 10px;
         letter-spacing: 0;
         margin: 0;
-        width: 50%;
+        
+    }
+
+    #call-area #call-btn{
+        font-size: 14px;
+        width: 60%;
+        margin: 0;
+        letter-spacing: 0;
     }
 
     /* contact */
