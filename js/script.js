@@ -98,8 +98,42 @@ $(document).ready(function(){
     setTimeout(function() {
 
         $('#data-area').parallax({imageSrc: 'imagens/cidadeparallax.png'});
+        $('#apply-area').parallax({imageSrc: 'imagens/pattern.png'});
 
     }, 250);
 
+    //Filtro do portfólio 
 
+    $('.filter-btn').on('click',function(){
+
+        let type = $(this).attr('id');
+        let boxes = $('.project-box');
+
+        $('.main-btn').removeClass('active');
+        $(this).addClass('active');
+
+        if (type == 'dev-btn') {
+            EachBoxes('dev', boxes);
+        } else if(type == 'uml-btn'){
+            EachBoxes('uml', boxes);
+        } else if(type == 'seo-btn'){
+            EachBoxes('seo', boxes);
+        } else {
+            EachBoxes('all', boxes);
+        }
+    });
+    function EachBoxes(type, boxes) {
+        
+        if (type == 'all') {
+            $(boxes).fadeIn();
+        } else {
+                $(boxes).each(function(){
+                    if(!$(this).hasClass(type)){
+                        $(this).fadeOut('slow');
+                     } else {
+                        $(this).fadeIn();
+                        }
+                    });
+            }    
+        }
 });

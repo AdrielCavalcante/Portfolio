@@ -19,14 +19,27 @@
     <script src="js/progressbar.min.js"></script>
     <!-- Parallax -->
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="container" id="nav-container">
             <nav class="navbar navbar-expand-lg fixed-top">
-                <a href="#" class="navbar-brand">
+                <a href="index.html" class="navbar-brand">
                     <img src="imagens/notebook-logo.png" alt="Logo" id="logo">Adriel's inc.
                 </a>
+                <button onclick="myFunction()">Modo noturno</button>
+
+                <script>
+                    function myFunction() {
+                       var element = document.body;
+                       var element2 = document.div;
+                       element.classList.toggle("dark-mode");
+                       element2.classList.toggle("dark-mode");
+                    }
+                </script>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -173,6 +186,101 @@
                                 <p>Copos de Café</p>
                         </div>
                         </div> 
+                    </div>
+                </div>
+            <!-- Sobre mim -->
+            <div id="team-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Sobre mim</h3>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="imagens/Adriel.jpg" class="card-img-top" alt="Foto do Desenvolvedor">
+                                <div class="card-body">
+                                    <h5 class="card-title">Adriel Cavalcante</h5>
+                                    <p class="card-text">Desenvolvedor de softwares e sites</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                                <div id="textocard">
+                                    <p>Meu nome é Adriel, tenho 17 anos e sou um programador. Estou fazendo meu 3° ano no ensino médio e 3° ano no meu Técnico em Informática. Vivo no Rio de Janeiro, onde procuro oportunidades de estagiar. Pretendo aprofundar o meu aprendizado em programação mobile híbrida. Almejo trabalhar com Computação forense ou Segurança da Informação.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- Trabalhe conosco -->
+            <div id="apply-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 apply-box" id="company-img"></div>
+                        <div class="col-md-6 apply-box" id="pattern-img">
+                            <h4>Gosta de desafios?</h4>
+                            <p>Temos diversas áreas disponíveis, entre elas, UI/UX Design / Analista de projeto e mais.</p>
+                            <p>Clique no botão abaixo e confira os benefícios e as posições em aberto.</p>
+                            <p>Conosco, você terá o uso das melhores Tecnologias do mercado.</p>
+                            <a href="#" class="main-btn" id="apply-btn">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfólio -->
+            <div id="portfolio-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="main-title">Conheça nossos projetos</h3>
+                        </div>
+                        <div class="col-md-12" id="filter-btn-box">
+                            <button class="main-btn filter-btn active" id="all-btn">Todos</button>
+                            <button class="main-btn filter-btn" id="dev-btn">Desenvolvimento</button>
+                            <button class="main-btn filter-btn" id="uml-btn">Análise</button>
+                            <button class="main-btn filter-btn" id="seo-btn">SEO</button>
+                        </div>
+                        <div class="col-md-4 project-box dev">
+                            <img src="imagens/Facial-detector.jpg" class="img-fluid" alt="Detector facial">
+                        </div>
+                        <div class="col-md-4 project-box dev">
+                            <img src="imagens/phplogin.jpg" class="img-fluid" alt="Um CRUD com PHP por meio de login com criptografia">
+                        </div>
+                        <div class="col-md-4 project-box uml">
+                            <img src="imagens/DER.jpg" class="img-fluid" alt="Um DER, para planejamento de banco de dados relacionais">
+                        </div>
+                        <div class="col-md-4 project-box uml">
+                            <img src="imagens/UML-Classehotel.jpg" class="img-fluid" alt="Diagrama de classes de uma rede de hotelaria">
+                        </div>
+                        <div class="col-md-4 project-box seo">
+                            <img src="imagens/SEO.jpg" class="img-fluid" alt="Código bom para SEO">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Newsletter -->
+            <div id="news-area">
+                <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3 class="main-title">Fique dentro das novidades</h3>
+                            </div>
+                        </div>
+                    <p>Assine nossa lista de E-mail, e receba nossos conteúdos sobre Desenvolvimento Software.</p>
+                    <form action="">
+                        <input type="email" class="form-control" id="email-input" name="email" placeholder="Seu E-mail">
+                        <input type="submit" value="Inscrever" id="news-btn">
+                    </form>
+                
+            </div>
+            </div>
+            <!-- Call to action -->
+            <div id="call-area">
+                <div class="container">
+                    <div class="row">
+                        <p>Deseja fazer um orçamento sem compromisso?
+                        <button class="main-btn" id="call-btn">Orçar</button>
+                        </p>
                     </div>
                 </div>
             </div>

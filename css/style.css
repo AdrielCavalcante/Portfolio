@@ -4,6 +4,10 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.dark-mode {
+    background-color: black;
+    color: white;
+}
 .row{
     margin: 0;
 }
@@ -84,7 +88,12 @@ header, .navbar{
     padding: 10px 20px;
     border-radius: 30px;
     border: 3px solid transparent;
+    outline: none;
     transition: .5s;
+}
+
+.main-btn:focus{
+    outline: none;
 }
 
 .main-btn:hover {
@@ -99,10 +108,6 @@ header, .navbar{
 }
 
 /* Minhas Habilidades */
-
-#about-area{
-    background-color: #F9F9F9;
-}
 
 #about-area{
     text-align: justify;
@@ -191,4 +196,187 @@ header, .navbar{
     text-align: center;
     font-size: 26px;
     margin-top: 20px;
+}
+
+/* Sobre mim */
+
+.card-body{
+    text-align: center;
+}
+
+.card-title{
+    color: black;
+}
+
+#textocard p{
+    text-align: justify;
+    font-size: 22pt;
+}
+
+/* Trabalhe conosco */
+
+#apply-area{
+    height: 500px;
+}
+
+#apply-area .container-fluid, #apply-area .row{
+    height: 100%;
+}
+
+#apply-area .apply-box{
+    text-align: center;
+    padding: 70px 50px;
+}
+
+#company-img{
+    background-image: url(../imagens/empresa.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+#pattern-img h4, #pattern-img p{
+    color: #FFF;
+}
+
+#pattern-img h4{
+    margin-top: 8%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#pattern-img p{
+    margin-bottom: 20px;
+}
+
+#apply-btn{
+    display: block;
+    height: auto;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: transparent;
+    border-color: #FFF;
+}
+
+#apply-btn:hover{
+    border-color: #65DAF9;
+    background-color: #65DAF9;
+}
+
+/* Portfolio */
+
+.project-box{
+    margin-bottom: 30px;
+}
+
+#filter-btn-box{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#portfolio-area .filter-btn{
+    color: #444;
+    border: 1px solid #444;
+    background-color: transparent;
+    text-transform: none;
+    margin: 0 15px;
+    min-width: 100px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+}
+
+#portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover{
+    color: #FFF;
+    background-color: #65DAF9;
+    border-color: #65DAF9;
+}
+
+/* NewsLetter */
+
+#news-area{
+    text-align: center;
+}
+
+#news-area p{
+    font-size: 18pt;
+    margin-bottom: 40px;
+}
+
+#email-input{
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid #65DAF9;
+    display: inline;
+    box-sizing: border-box;
+    width: 40%;
+    height: 40px;
+}
+
+#news-btn{
+    border: 1px solid #65DAF9;
+    background-color: #65DAF9;
+    text-transform: uppercase;
+    color: #FFF;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 40px;
+    padding: 0 30px;
+    margin-left: -130px;
+    position: absolute;
+    outline: none;
+    transition: .5s;
+}
+
+#news-btn:hover{
+    background-color: #FFF;
+    color: #65DAF9;
+}
+
+/* call to action */
+
+#call-area{
+    background-color: #65DAF9;
+    text-transform: uppercase;
+}
+
+#call-area .container{
+    padding: 40px 100px;
+}
+
+#call-area .row{
+    display: block;
+    text-align: center;
+}
+#call-area p{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20pt;
+    width: auto;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    display: inline;
+    height: 60px;
+    line-height: 60px;
+}
+
+#call-area #call-btn{
+    background-color: #FFF;
+    color: #65DAF9;
+    font-weight: bold;
+    font-size: 20pt;
+    margin-left: 30px;
+    width: auto;
+    letter-spacing: 2px;
+    transition: .5s;
+    padding-top: 0;
+}
+
+#call-area #call-btn:hover{
+    background-color: #444;
+    border-color: #333;
+    color: #FFF;
 }
