@@ -1,2 +1,2 @@
 # Portfolio
- Um site feito com Boostrap.
+ Um site feito com Bootstrap.
