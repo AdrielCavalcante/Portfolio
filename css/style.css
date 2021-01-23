@@ -322,6 +322,10 @@ header, .navbar{
     height: 40px;
 }
 
+#email-input:focus{
+    box-shadow: none;
+}
+
 #news-btn{
     border: 1px solid #65DAF9;
     background-color: #65DAF9;
