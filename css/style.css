@@ -5,8 +5,8 @@ body{
 }
 
 .dark-mode {
-    background-color: black;
-    color: white;
+    background-color: rgb(17, 17, 17);
+    color: rgb(214, 194, 194);
 }
 .row{
     margin: 0;
@@ -17,7 +17,7 @@ body{
 }
 
 p,li{
-    color: #444;
+    color: #555;
     font-size: 14pt;
 }
 

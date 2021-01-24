@@ -171,5 +171,8 @@ $(document).ready(function(){
         }, 1500);
 
     });
+    //Data atual
+    var d = new Date();
+    document.getElementById("date").innerHTML = "<p>Desenvolvido por <a href='https://github.com/AdrielCavalcante' target='_blank'>Adriel Cavalcante </a>"+d.getFullYear()+"&copy</p>";
 
 });
