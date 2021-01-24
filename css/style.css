@@ -3,11 +3,32 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-
+/* Dark-mode */
 .dark-mode {
     background-color: rgb(17, 17, 17);
     color: rgb(214, 194, 194);
 }
+
+.dark-mode p{
+    color: #999;
+}
+
+.dark-mode .main-title {
+    color: #777;
+}
+
+.dark-mode .about-title{
+    color: #888;
+}
+
+.dark-mode #about-list li{
+    color: #999;
+}
+
+.dark-mode #portfolio-area .filter-btn{
+    color: #999;
+}
+
 .row{
     margin: 0;
 }
@@ -53,7 +74,6 @@ header, .navbar{
 #navbar-links a:hover{
     color: #3EC1D5;
 }
-
 
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 1rem .8rem;
@@ -609,6 +629,10 @@ header, .navbar{
 
     #company-img{
         display: none;
+    }
+
+    #textocard p{
+        text-align: start;   
     }
 
     /* filter */
