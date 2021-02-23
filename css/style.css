@@ -320,6 +320,12 @@ header, .navbar{
     border-color: #65DAF9;
 }
 
+#portfolio-area #img {
+    transition: all 0.25s ease-in;
+}
+#portfolio-area #img:hover {
+    transform: scale(1.15);
+}
 /* NewsLetter */
 
 #news-area{

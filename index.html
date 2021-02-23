@@ -26,7 +26,7 @@
     <header>
         <div class="container" id="nav-container">
             <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-                <a href="index.html" class="navbar-brand">
+                <a href="" class="navbar-brand">
                     <img src="imagens/notebook-logo.png" alt="Logo" id="logo">Adriel's inc.
                 </a>
                 <!-- Darkmode -->
@@ -42,7 +42,7 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link" onclick="myFunction()">Modo noturno</a>
+                        <a class="nav-link" onclick="myFunction()">Modo noturno</a>
                         <a class="nav-item nav-link" id="home-menu">Home</a>
                         <a class="nav-item nav-link" id="about-menu">Tecnologias</a>
                         <a class="nav-item nav-link" id="services-menu">Serviços</a>
@@ -238,19 +238,19 @@
                             <button class="main-btn filter-btn" id="uml-btn">Análise</button>
                             <button class="main-btn filter-btn" id="seo-btn">SEO</button>
                         </div>
-                        <div class="col-md-4 project-box dev">
+                        <div class="col-md-4 project-box dev" id="img">
                             <img src="imagens/Facial-detector.jpg" class="img-fluid" alt="Detector facial">
                         </div>
-                        <div class="col-md-4 project-box dev">
+                        <div class="col-md-4 project-box dev" id="img">
                             <img src="imagens/phplogin.jpg" class="img-fluid" alt="Um CRUD com PHP por meio de login com criptografia">
                         </div>
-                        <div class="col-md-4 project-box uml">
+                        <div class="col-md-4 project-box uml" id="img">
                             <img src="imagens/DER.jpg" class="img-fluid" alt="Um DER, para planejamento de banco de dados relacionais">
                         </div>
-                        <div class="col-md-4 project-box uml">
+                        <div class="col-md-4 project-box uml" id="img">
                             <img src="imagens/UML-Classehotel.jpg" class="img-fluid" alt="Diagrama de classes de uma rede de hotelaria">
                         </div>
-                        <div class="col-md-4 project-box seo">
+                        <div class="col-md-4 project-box seo" id="img">
                             <img src="imagens/SEO.jpg" class="img-fluid" alt="Código bom para SEO">
                         </div>
                     </div>
@@ -302,7 +302,7 @@
                     </div>
                     <div class="col-md-6 contact-box">
                         <i class="fas fa-envelope"></i>
-                        <p><span class="contact-title">Envie um E-mail:</span> adriel.cavalcante2004@gmail.com</p>
+                        <p><span class="contact-title">Envie um E-mail: </span><a style="color: #555;" target="_blank" href="mailto:adriel.cavalcante2004@gmail.com">adriel.cavalcante2004@gmail.com</a></p>
                     </div>
                     <!-- Sem backend para receber
                     <div class="col-md-6" id="msg-box">
@@ -332,5 +332,6 @@
     </footer>
     <!-- Script do projeto -->
     <script src="js/script.js"></script>
+</script>
 </body>
 </html>
