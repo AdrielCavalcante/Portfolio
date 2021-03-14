@@ -7,13 +7,13 @@ $(document).ready(function(){
 
         color: '#64DAF9',
         strokeWidth: 8,
-        duration: 1100,
+        duration: 1200,
         from: { color: '#AAA' },
         to: { color: '#65DAF9' },
 
         step: function(state, circle) {
             circle.path.setAttribute('stroke', state.color);
-            let value = Math.round(circle.value() * 6);
+            let value = Math.round(circle.value() * 8);
 
             circle.setText(value);
         }
@@ -49,7 +49,7 @@ $(document).ready(function(){
 
         step: function(state, circle) {
             circle.path.setAttribute('stroke', state.color);
-            let value = Math.round(circle.value() * 7);
+            let value = Math.round(circle.value() * 8);
 
             circle.setText(value);
         }
@@ -67,7 +67,7 @@ $(document).ready(function(){
 
         step: function(state, circle) {
             circle.path.setAttribute('stroke', state.color);
-            let value = Math.round(circle.value() * 200);
+            let value = Math.round(circle.value() * 212);
 
             circle.setText(value);
         }
@@ -173,6 +173,6 @@ $(document).ready(function(){
     });
     //Data atual
     var d = new Date();
-    document.getElementById("date").innerHTML = "<p>Desenvolvido por <a href='https://github.com/AdrielCavalcante' target='_blank'>Adriel Cavalcante </a>"+d.getFullYear()+"&copy</p>";
+    document.getElementById("date").innerHTML = "<p>Desenvolvido por <a href='https://github.com/AdrielCavalcante' title='GitHub' target='_blank'>Adriel Cavalcante </a>"+d.getFullYear()+"&copy</p>";
 
 });
