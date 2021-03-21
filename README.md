@@ -1,4 +1,4 @@
-# Portfólio
+<h1 align="center"> Portfólio </h1>
 
 ### Tecnologias Front-end usadas: ![HTML5](https://img.shields.io/badge/-HTML5-%23E44D27?style=flat-square&logo=html5&logoColor=ffffff) ![CSS3](https://img.shields.io/badge/-CSS3-%2300BFFF?style=flat-square&logo=CSS3&logoColor=ffffff) 
 ### Linguagem de programação usada: ![JavaScript](https://img.shields.io/badge/-JavaScript-%23FFC500?style=flat-square&logo=javascript&logoColor=ffffff)
