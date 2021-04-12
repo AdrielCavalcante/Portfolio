@@ -7,13 +7,13 @@ $(document).ready(function(){
 
         color: '#64DAF9',
         strokeWidth: 8,
-        duration: 1200,
+        duration: 1800,
         from: { color: '#AAA' },
         to: { color: '#65DAF9' },
 
         step: function(state, circle) {
             circle.path.setAttribute('stroke', state.color);
-            let value = Math.round(circle.value() * 8);
+            let value = Math.round(circle.value() * 12);
 
             circle.setText(value);
         }
@@ -25,13 +25,13 @@ $(document).ready(function(){
 
         color: '#64DAF9',
         strokeWidth: 8,
-        duration: 800,
+        duration: 900,
         from: { color: '#AAA' },
         to: { color: '#65DAF9' },
 
         step: function(state, circle) {
             circle.path.setAttribute('stroke', state.color);
-            let value = Math.round(circle.value() * 2);
+            let value = Math.round(circle.value() * 3);
 
             circle.setText(value);
         }
@@ -43,13 +43,13 @@ $(document).ready(function(){
 
         color: '#64DAF9',
         strokeWidth: 8,
-        duration: 1200,
+        duration: 1300,
         from: { color: '#AAA' },
         to: { color: '#65DAF9' },
 
         step: function(state, circle) {
             circle.path.setAttribute('stroke', state.color);
-            let value = Math.round(circle.value() * 8);
+            let value = Math.round(circle.value() * 9);
 
             circle.setText(value);
         }
@@ -61,13 +61,13 @@ $(document).ready(function(){
 
         color: '#64DAF9',
         strokeWidth: 8,
-        duration: 2200,
+        duration: 2300,
         from: { color: '#AAA' },
         to: { color: '#65DAF9' },
 
         step: function(state, circle) {
             circle.path.setAttribute('stroke', state.color);
-            let value = Math.round(circle.value() * 212);
+            let value = Math.round(circle.value() * 247);
 
             circle.setText(value);
         }
@@ -116,8 +116,8 @@ $(document).ready(function(){
             EachBoxes('dev', boxes);
         } else if(type == 'uml-btn'){
             EachBoxes('uml', boxes);
-        } else if(type == 'seo-btn'){
-            EachBoxes('seo', boxes);
+        } else if(type == 'design-btn'){
+            EachBoxes('design', boxes);
         } else {
             EachBoxes('all', boxes);
         }
